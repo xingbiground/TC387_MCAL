@@ -1,3 +1,4 @@
 TriCore_Debug_Tasking/
 *.gitignore
 .vscode/
+*_Bswmd.arxml
