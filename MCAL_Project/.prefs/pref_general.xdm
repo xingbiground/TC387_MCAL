@@ -65,6 +65,42 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
+      <d:ctr name="CanTrcv_17_V9251">
+        <d:var name="ConfigurationFileURL" value="config\CanTrcv_17_V9251.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="CanTrcv_17_V9251_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.20.0"/>
+      </d:ctr>
+      <d:ctr name="CanTrcv_17_W9255">
+        <d:var name="ConfigurationFileURL" value="config\CanTrcv_17_W9255.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="CanTrcv_17_W9255_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.25.0"/>
+      </d:ctr>
       <d:ctr name="Crc">
         <d:var name="ModuleId" value="Crc_Aurix2GAS422"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -173,6 +209,24 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
+      <d:ctr name="EcuM">
+        <d:var name="ConfigurationFileURL" value="config\EcuM.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="EcuM_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.0.0"/>
+      </d:ctr>
       <d:ctr name="Eth">
         <d:var name="ConfigurationFileURL" value="config\Eth.xdm"/>
         <d:var name="ConfigurationFormat" value="xdm"/>
@@ -245,6 +299,42 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
+      <d:ctr name="Fr">
+        <d:var name="ConfigurationFileURL" value="config\Fr.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Fr_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.25.0"/>
+      </d:ctr>
+      <d:ctr name="FrIf">
+        <d:var name="ConfigurationFileURL" value="config\FrIf.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="FrIf_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.0.0"/>
+      </d:ctr>
       <d:ctr name="Gpt">
         <d:var name="ModuleId" value="Gpt_Aurix2GAS422"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -262,6 +352,24 @@
         <d:var name="RecConfig" >
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
+      </d:ctr>
+      <d:ctr name="Hssl">
+        <d:var name="ConfigurationFileURL" value="config\Hssl.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Hssl_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="10.40.2"/>
       </d:ctr>
       <d:ctr name="I2c">
         <d:var name="ModuleId" value="I2c_Aurix2GAS422"/>
@@ -299,6 +407,24 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
+      <d:ctr name="Iom">
+        <d:var name="ConfigurationFileURL" value="config\Iom.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Iom_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="10.40.0"/>
+      </d:ctr>
       <d:ctr name="Irq">
         <d:var name="ModuleId" value="Irq_Aurix2GAS422"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -316,6 +442,24 @@
         <d:var name="RecConfig" >
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
+      </d:ctr>
+      <d:ctr name="Lin">
+        <d:var name="ConfigurationFileURL" value="config\Lin.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Lin_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="20.25.0"/>
       </d:ctr>
       <d:ctr name="McalLib">
         <d:var name="ModuleId" value="McalLib_Aurix2GAS422"/>
@@ -422,6 +566,24 @@
         <d:var name="RecConfig" >
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
+      </d:ctr>
+      <d:ctr name="Sent">
+        <d:var name="ConfigurationFileURL" value="config\Sent.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Sent_Aurix2GAS422"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="10.40.1"/>
       </d:ctr>
       <d:ctr name="Smu">
         <d:var name="ModuleId" value="Smu_Aurix2GAS422"/>

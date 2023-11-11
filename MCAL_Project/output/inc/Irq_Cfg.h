@@ -15,9 +15,9 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2023-11-11, 17:37:31      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2023-11-11, 18:10:33      !!!IGNORE-LINE!!!                   **
 **                                                                            **
-**  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
+**  GENERATOR : Build b200227-0222        !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  BSW MODULE DECRIPTION : Irq.bmd                                           **
 **                                                                            **
@@ -3184,12 +3184,12 @@ Container : I2C interrupt Configuration
 
 /* Global macros that determines whether a module / SRN is in use or not
 */
-#define IRQ_HSSL_EXIST              (STD_OFF)
-#define IRQ_HSSL0_EXIST             (STD_OFF)
+#define IRQ_HSSL_EXIST              (STD_ON)
+#define IRQ_HSSL0_EXIST             (STD_ON)
 #define IRQ_HSSL1_EXIST             (STD_OFF)
 
 
-#define IRQ_SENT_EXIST               (STD_OFF)
+#define IRQ_SENT_EXIST               (STD_ON)
 
 #define IRQ_DSADC_EXIST               (STD_ON)
 

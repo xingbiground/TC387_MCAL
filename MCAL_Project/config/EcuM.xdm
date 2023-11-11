@@ -1,0 +1,124 @@
+<?xml version='1.0'?>
+<datamodel version="7.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="EcuM" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="EcuM" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/AURIX2G/EcucDefs/EcuM"/>
+              <a:a name="IMPORTER_INFO" value="Impr367"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+              </d:var>
+              <d:ctr name="EcuMConfiguration" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:ctr name="EcuMCommonConfiguration" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                  <d:var name="EcuMConfigConsistencyHash" type="INTEGER" 
+                         value="0">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                  </d:var>
+                  <d:ref name="EcuMDefaultAppMode" type="REFERENCE" >
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                  </d:ref>
+                  <d:lst name="EcuMOSResource">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:ref type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:ref>
+                  </d:lst>
+                  <d:ctr name="EcuMDefaultShutdownTarget" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:var name="EcuMDefaultState" type="ENUMERATION" 
+                           value="EcuMStateOff">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:lst name="EcuMDefaultResetModeRef"/>
+                    <d:lst name="EcuMDefaultSleepModeRef"/>
+                  </d:ctr>
+                  <d:lst name="EcuMDriverInitListOne" type="MAP"/>
+                  <d:lst name="EcuMDriverInitListZero" type="MAP"/>
+                  <d:lst name="EcuMDriverRestartList" type="MAP"/>
+                  <d:lst name="EcuMSleepMode" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:ctr name="EcuMSleepMode_0" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      <d:var name="EcuMSleepModeId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="EcuMSleepModeSuspend" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:ref name="EcuMSleepModeMcuModeRef" type="REFERENCE" 
+                             value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuModeSettingConf_0">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:ref>
+                      <d:lst name="EcuMWakeupSourceMask">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMWakeupSource_0">
+                          <a:a name="IMPORTER_INFO" value="Impr367"/>
+                        </d:ref>
+                      </d:lst>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="EcuMWakeupSource" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:ctr name="EcuMWakeupSource_0" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      <d:lst name="EcuMCheckWakeupTimeout"/>
+                      <d:lst name="EcuMValidationTimeout"/>
+                      <d:var name="EcuMWakeupSourceId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:lst name="EcuMComMChannelRef"/>
+                      <d:lst name="EcuMResetReasonRef"/>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+                <d:lst name="EcuMFixedConfiguration" type="MAP"/>
+                <d:lst name="EcuMFlexConfiguration" type="MAP"/>
+              </d:ctr>
+              <d:lst name="EcuMFixedGeneral" type="MAP"/>
+              <d:lst name="EcuMFlexGeneral" type="MAP"/>
+              <d:ctr name="EcuMGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:var name="EcuMDevErrorDetect" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="EcuMIncludeDet" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="EcuMMainFunctionPeriod" type="FLOAT" value="0.1">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="EcuMVersionInfoApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

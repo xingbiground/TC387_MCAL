@@ -13,9 +13,9 @@
 **                                                                            **
 **   FILENAME   : DemoApp_Cfg.h                                               **
 **                                                                            **
-**  DATE, TIME: 2023-11-11, 17:37:30                                          **
+**  DATE, TIME: 2023-11-11, 18:16:34                                          **
 **                                                                            **
-**  GENERATOR : Build b191017-0938                                            **
+**  GENERATOR : Build b200227-0222                                            **
 **                                                                            **
 **  VARIANT   : Post-Build                                                    **
 **                                                                            **
@@ -65,12 +65,12 @@
 #define MSC_DEMO_EN                   (STD_OFF)
 #define CRC_DEMO_EN                   (STD_ON)
 #define LIN_DEMO_EN                   (STD_ON)
-#define HSSL_DEMO_EN                  (STD_OFF)
-#define SENT_DEMO_EN                  (STD_OFF)
+#define HSSL_DEMO_EN                  (STD_ON)
+#define SENT_DEMO_EN                  (STD_ON)
 #define FLSLDR_DEMO_EN                (STD_ON)
 #define IRQ_DEMO_EN                   (STD_ON)
 #define I2C_DEMO_EN                   (STD_ON)
-#define IOM_DEMO_EN                   (STD_OFF)
+#define IOM_DEMO_EN                   (STD_ON)
 #define UART_DEMO_EN                   (STD_ON)
 #define SMU_DEMO_EN                  (STD_ON)
 #define STM_DEMO_EN                  (STD_ON)

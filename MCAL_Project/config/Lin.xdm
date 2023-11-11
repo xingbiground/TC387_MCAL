@@ -1,0 +1,144 @@
+<?xml version='1.0'?>
+<datamodel version="7.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Lin" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Lin" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/AURIX2G/EcucDefs/Lin"/>
+              <a:a name="IMPORTER_INFO" value="Impr367"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+              </d:var>
+              <d:lst name="LinDemEventParameterRefs" type="MAP"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:var name="ArMajorVersion" type="INTEGER" value="4"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="2"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="20"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="25"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="82">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="17">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="AscLin">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="_TRICORE_TC389">
+                  <a:a name="IMPORTER_INFO">
+                    <a:v>@CALC</a:v>
+                    <a:v>@DEF</a:v>
+                  </a:a>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="LinGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:var name="LinCsrClksel" type="ENUMERATION" value="ASCLINF">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="LinDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="LinHwMcuTrigSleepEnable" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="LinIndex" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="LinInitApiMode" type="ENUMERATION" 
+                       value="LIN_MCAL_SUPERVISOR">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="LinMultiCoreErrorDetect" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="LinTimeoutDuration" type="INTEGER" value="300"/>
+                <d:var name="LinVersionInfoApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:ref name="LinSysClockRef" type="REFERENCE" 
+                       value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePointConfig">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:ref>
+                <d:var name="LinMasterInterruptEnable" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="LinGlobalConfig" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:lst name="LinChannel" type="MAP">
+                  <d:ctr name="LinChannel_0" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:lst name="LinChannelEcuMWakeupSource"/>
+                    <d:var name="LinAutoCalcBaudParams" type="BOOLEAN" 
+                           value="true">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChanAssignedHw" type="ENUMERATION" 
+                           value="ASCLIN1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelBaudDenominator" type="INTEGER" 
+                           value="1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelBaudNumerator" type="INTEGER" 
+                           value="1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelBaudPreScalar" type="INTEGER" 
+                           value="1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelBaudRate" type="INTEGER" 
+                           value="19200">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelId" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinChannelWakeupSupport" type="BOOLEAN" 
+                           value="true">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinInterByteSpace" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="LinRxAlternateInputSignal" type="ENUMERATION" 
+                           value="SELECT_A_PORT15_PIN1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:ref name="LinClockRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:ref>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

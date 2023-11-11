@@ -89,7 +89,7 @@
 ** Return value   : None                                                      **
 **                                                                            **
 *******************************************************************************/
-extern void Stm_Isr(const uint8 ModuleNumber, const uint32 InterruptNode);
+extern void Stm_Isr(const uint32 ModuleNumber, const uint32 InterruptNode);
 
 /******************************************************************************/
 

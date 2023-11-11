@@ -1,6 +1,6 @@
 /*******************************************************************************
 **                                                                            **
-** Copyright (C) Infineon Technologies (2020)                                 **
+** Copyright (C) Infineon Technologies (2019)                                 **
 **                                                                            **
 ** All rights reserved.                                                       **
 **                                                                            **
@@ -10,15 +10,15 @@
 **                                                                            **
 ********************************************************************************
 **                                                                            **
-**  FILENAME  : Fee_PBcfg.h                                                   **
+**  FILENAME  : Sent_PBcfg.h                                                  **
 **                                                                            **
-**  VERSION   : 7.0.0                                                         **
+**  VERSION   : 3.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2023-11-11, 18:03:08    !!!IGNORE-LINE!!!                 **
+**  DATE, TIME: 2023-11-11, 18:00:52   !!!IGNORE-LINE!!!                      **
 **                                                                            **
-**  GENERATOR : Build b200227-0222                                          **
+**  GENERATOR : Build b200227-0222       !!!IGNORE-LINE!!!                    **
 **                                                                            **
-**  BSW MODULE DECRIPTION : Fee.bmd                                           **
+**  BSW MODULE DECRIPTION : Sent.bmd                                          **
 **                                                                            **
 **  VARIANT   : Variant PB                                                    **
 **                                                                            **
@@ -28,44 +28,53 @@
 **                                                                            **
 **  VENDOR    : Infineon Technologies                                         **
 **                                                                            **
-**  DESCRIPTION  : Fee configuration generated out of ECUC file               **
+**  DESCRIPTION  : Sent configuration generated out of ECUC file              **
 **                                                                            **
-**  SPECIFICATION(S) : Specification of FEE Driver,                           **
-**                     AUTOSAR Release 4.2.2 and 4.4.0                        **
+**  SPECIFICATION(S) : Specification of Sent Driver, AUTOSAR Release 4.2.2    **
 **                                                                            **
 **  MAY BE CHANGED BY USER : no                                               **
 **                                                                            **
 *******************************************************************************/
-
-#ifndef FEE_PBCFG_H
-#define FEE_PBCFG_H
+#ifndef Sent_PBCFG_H
+#define Sent_PBCFG_H
 /*******************************************************************************
 **                      Includes                                              **
 *******************************************************************************/
-
+#include "Sent.h"
 
 /*******************************************************************************
 **                      Global Const Declaration                              **
 *******************************************************************************/
-#define FEE_START_SEC_CONFIG_DATA_ASIL_B_LOCAL_UNSPECIFIED
-/*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
-without safegaurd. It complies to Autosar guidelines. */
-/*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
-guideline. */
-/* [cover parentID={4579FE20-92DA-4848-93DB-7AD4FD35DD50}]*/
-/* [cover parentID={566ED99C-0D96-46ac-97BF-E97B04E2C700}]*/
-/* [cover parentID={E4047F9A-8865-4b2c-9D3C-385479854EAD}]*/
-/* [cover parentID={5713A17A-3FA1-427f-A0B6-89125A17689A}]*/
-/* [cover parentID={72DABBEB-F27B-4677-B6B4-B53F634341BA}]*/
-#include "Fee_MemMap.h"
-/* Extern declaration of Fee Config Root */
-extern const Fee_ConfigType Fee_Config;
-#define FEE_STOP_SEC_CONFIG_DATA_ASIL_B_LOCAL_UNSPECIFIED
-/*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
-without safegaurd. It complies to Autosar guidelines. */
-/*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
-guideline. */
-#include "Fee_MemMap.h"
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+#define SENT_START_SEC_CONFIG_DATA_QM_GLOBAL_UNSPECIFIED
+/*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header usage as per Autosar
+   guideline.*/
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+   guideline. */
+#include "Sent_MemMap.h"
+/* Extern declaration of Sent Config Root */
+extern const Sent_ConfigType Sent_Config;
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+   in generated code due to Autosar Naming constraints.*/
+#define SENT_STOP_SEC_CONFIG_DATA_QM_GLOBAL_UNSPECIFIED
+/*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header usage as per Autosar
+   guideline.*/
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+   guideline. */
+#include "Sent_MemMap.h"
+#endif  /* Sent_PBCFG_H */
 
-#endif  /* FEE_PBCFG_H */
 

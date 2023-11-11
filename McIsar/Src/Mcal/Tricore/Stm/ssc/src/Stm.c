@@ -1597,7 +1597,7 @@ ModuleNumber)
 **                      - is the interrupt handler and collects the interrupt **
 **                        node and invoke the call-back function              **
 *******************************************************************************/
-void Stm_Isr(const uint8 ModuleNumber, const uint32 InterruptNode)
+void Stm_Isr(const uint32 ModuleNumber, const uint32 InterruptNode)
 {
   const Stm_ModuleParameterType      *StmkernelStatusPtr;
   uint8 CompareRegisterId;
@@ -1624,7 +1624,7 @@ void Stm_Isr(const uint8 ModuleNumber, const uint32 InterruptNode)
     CMCON.B.MSTART0):(STM_BASE[ModuleNumber].CMCON.B.MSTART1);
    
     /* load 64 bits timer value */
-    Stm_64Bit_Timer_Value= Stm_lReadTotalTimer(ModuleNumber);
+    Stm_64Bit_Timer_Value= Stm_lReadTotalTimer((uint8)ModuleNumber);
    
     shiftval = STM_MAX_SHIFT_VALUE - MatchStartBit;
   
