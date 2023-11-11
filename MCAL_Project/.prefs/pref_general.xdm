@@ -632,7 +632,7 @@
     </d:var>
     <d:var name="ECUId" value="Aurix2g"/>
     <d:var name="ConfigurationPath" value="config"/>
-    <d:var name="GenerationPath" value=".\..\..\..\0_Src\AppSw\Tricore\CfgMcal"/>
+    <d:var name="GenerationPath" value="output"/>
     <d:var name="UnixLF" value="FALSE"/>
     <d:var name="UnixLFConfigData" value="FALSE"/>
     <d:var name="DisableMinListChildCreation" value="FALSE"/>

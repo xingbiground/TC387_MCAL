@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+**                                                                            **
+** Copyright (C) Infineon Technologies (2023)                                 **
+**                                                                            **
+** All rights reserved.                                                       **
+**                                                                            **
+** This document contains proprietary information belonging to Infineon       **
+** Technologies. Passing on and copying of this document, and communication   **
+** of its contents is not permitted without prior written authorization.      **
+**                                                                            **
+********************************************************************************
+**                                                                            **
+**  FILENAME  : CanTrcv_17_W9255_Bswmd.arxml                                  **
+**                                                                            **
+**  VERSION   : 12.0.0                                                        **
+**                                                                            **
+**  DATE, TIME: 2023-11-11, 17:37:31          !!!IGNORE-LINE!!!           **
+**                                                                            **
+**  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!             **
+**                                                                            **
+**  VARIANT   : Variant PC                                                    **
+**                                                                            **
+**  PLATFORM  : Infineon AURIX2G                                              **
+**                                                                            **
+**  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+**                                                                            **
+**  VENDOR    : Infineon Technologies                                         **
+**                                                                            **
+**  DESCRIPTION  : Basic Software Module Description for CanTrcv_17_W9255     **
+**                 driver                                                     **
+**                                                                            **
+**  SPECIFICATION(S) : Specification of CanTrcv Driver, AUTOSAR Release 4.2.2 **
+**                     and AUTOSAR Release 4.4.0                              **
+**                                                                            **
+**  MAY BE CHANGED BY USER : no                                               **
+**                                                                            **
+*******************************************************************************/
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<AR-PACKAGES>
+  <AR-PACKAGE>
+    <SHORT-NAME>AUTOSAR_CanTrcv_17_W9255</SHORT-NAME>
+    <AR-PACKAGES>
+      <AR-PACKAGE>
+       <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+       <CATEGORY>STANDARD</CATEGORY>
+       <ELEMENTS>
+         <BSW-MODULE-DESCRIPTION>
+            <SHORT-NAME>CanTrcv</SHORT-NAME>
+            <LONG-NAME>
+              <L-4 L="EN">CanTrcv W9255 Driver</L-4>
+            </LONG-NAME>
+            <CATEGORY>BSW_MODULE</CATEGORY>
+            <MODULE-ID>70</MODULE-ID>
+            <PROVIDED-ENTRYS>
+              <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_Init</BSW-MODULE-ENTRY-REF>
+              </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetOpMode</BSW-MODULE-ENTRY-REF>
+              </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetOpMode</BSW-MODULE-ENTRY-REF>
+              </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetBusWuReason</BSW-MODULE-ENTRY-REF>
+             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetWakeupMode</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_CheckWakeup</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_CheckWakeFlag</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_MainFunction</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ClearTrcvWufFlag</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ClearTrcvTimeoutFlag</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetTrcvSystemData</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ReadTrcvSilenceFlag</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ReadTrcvTimeoutFlag</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetPNActivationState</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+          </PROVIDED-ENTRYS>
+          <BSW-MODULE-DEPENDENCYS>
+           <BSW-MODULE-DEPENDENCY>
+             <SHORT-NAME>DetDependency</SHORT-NAME>
+             <TARGET-MODULE-ID>15</TARGET-MODULE-ID>
+             <REQUIRED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BswModuleEntrys/Det_ReportError</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+             </REQUIRED-ENTRYS>
+           </BSW-MODULE-DEPENDENCY>
+           <BSW-MODULE-DEPENDENCY>
+             <SHORT-NAME>McalLibDependency</SHORT-NAME>
+             <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
+             <REQUIRED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_DelayTickResolution</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_DelayGetTick</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_SetBitAtomic</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+             </REQUIRED-ENTRYS>
+           </BSW-MODULE-DEPENDENCY>
+           <BSW-MODULE-DEPENDENCY>
+             <SHORT-NAME>CanIfDependency</SHORT-NAME>
+             <TARGET-MODULE-ID>60</TARGET-MODULE-ID>
+             <REQUIRED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanIf/BswModuleEntrys/CanIf_CheckTrcvWakeFlagIndication</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanIf/BswModuleEntrys/CanIf_ClearTrcvWufFlagIndication</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanIf/BswModuleEntrys/CanIf_ConfirmPnAvailability</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanIf/BswModuleEntrys/CanIf_TrcvModeIndication</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+             </REQUIRED-ENTRYS>
+           </BSW-MODULE-DEPENDENCY>
+           <BSW-MODULE-DEPENDENCY>
+             <SHORT-NAME>EcuMDependency</SHORT-NAME>
+             <TARGET-MODULE-ID>10</TARGET-MODULE-ID>
+             <REQUIRED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_EcuM/BswModuleEntrys/EcuM_SetWakeupEvent</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+             </REQUIRED-ENTRYS>
+           </BSW-MODULE-DEPENDENCY>
+           <BSW-MODULE-DEPENDENCY>
+             <SHORT-NAME>SpiDependency</SHORT-NAME>
+             <TARGET-MODULE-ID>83</TARGET-MODULE-ID>
+             <REQUIRED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetupEB</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SyncTransmit</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+             </REQUIRED-ENTRYS>
+           </BSW-MODULE-DEPENDENCY>
+         </BSW-MODULE-DEPENDENCYS>
+         <INTERNAL-BEHAVIORS>
+            <BSW-INTERNAL-BEHAVIOR>
+              <SHORT-NAME>CanTrcvBehavior</SHORT-NAME>
+                <EXCLUSIVE-AREAS>
+                   <EXCLUSIVE-AREA>
+                     <SHORT-NAME>SpiStatusUpdate</SHORT-NAME>
+                     <INTRODUCTION>
+                        <NOTE SI="User of the CanTrcv W9255 driver shall ensure that the critical section protection provided by the CanTrcv W9255 driver for SPI channel status update for each channel is implemented as suspend-resume of the interrupts. This critical section is to protect the driver channel from accessing SPI when the respective configured SPI channel is busy." NOTE-TYPE="HINT"/>
+                      </INTRODUCTION>
+                   </EXCLUSIVE-AREA>
+                </EXCLUSIVE-AREAS>
+              <ENTITYS>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_Init</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_Init</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_SetOpMode</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetOpMode</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_GetOpMode</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetOpMode</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_GetBusWuReason</SHORT-NAME>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetBusWuReason</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_SetWakeupMode</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetWakeupMode</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_CheckWakeup</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_CheckWakeup</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_CheckWakeFlag</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_CheckWakeFlag</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_ClearTrcvTimeoutFlag</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ClearTrcvTimeoutFlag</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_ClearTrcvWufFlag</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ClearTrcvWufFlag</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_GetTrcvSystemData</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_GetTrcvSystemData</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_ReadTrcvSilenceFlag</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ReadTrcvSilenceFlag</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_ReadTrcvTimeoutFlag</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_ReadTrcvTimeoutFlag</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_SetPNActivationState</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_SetPNActivationState</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+                <BSW-CALLED-ENTITY>
+                    <SHORT-NAME>CanTrcv_17_W9255_MainFunction</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/SpiStatusUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <MINIMUM-START-INTERVAL>0.005</MINIMUM-START-INTERVAL>
+                    <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                    <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_CanTrcv_17_W9255/BswModuleEntrys/CanTrcv_17_W9255_MainFunction</IMPLEMENTED-ENTRY-REF>
+                </BSW-CALLED-ENTITY>
+              </ENTITYS>
+              <EVENTS>
+                <BSW-TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_CanTrcv_17_W9255_MainFunction</SHORT-NAME>
+                  <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior/CanTrcv_17_W9255_MainFunction</STARTS-ON-EVENT-REF>
+                  <PERIOD>0.005</PERIOD>
+                </BSW-TIMING-EVENT>
+              </EVENTS>
+            </BSW-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </BSW-MODULE-DESCRIPTION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+      <AR-PACKAGE>
+        <SHORT-NAME>BswModuleEntrys</SHORT-NAME>
+        <CATEGORY>STANDARD</CATEGORY>
+        <ELEMENTS>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_Init</SHORT-NAME>
+            <SERVICE-ID>0</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>ConfigPtr</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                        <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_CanTrcv_17_W9255/ImplementationDataTypes/CanTrcv_17_W9255_ConfigType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_SetOpMode</SHORT-NAME>
+            <INTRODUCTION><NOTE SI="CanTrcv_17_W9255_SetOpMode is reentrant but for different transceivers." NOTE-TYPE="HINT" /></INTRODUCTION>
+            <SERVICE-ID>1</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>OpMode</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Can_GeneralTypes/ImplementationDataTypes/CanTrcv_TrcvModeType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_GetOpMode</SHORT-NAME>
+            <INTRODUCTION><NOTE SI="CanTrcv_17_W9255_GetOpMode is reentrant but for different transceivers." NOTE-TYPE="HINT" /></INTRODUCTION>
+            <SERVICE-ID>2</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>OpMode</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                        <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Can_GeneralTypes/ImplementationDataTypes/CanTrcv_TrcvModeType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_GetBusWuReason</SHORT-NAME>
+            <SERVICE-ID>3</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>reason</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                        <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Can_GeneralTypes/ImplementationDataTypes/CanTrcv_TrcvWakeupReasonType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_SetWakeupMode</SHORT-NAME>
+            <INTRODUCTION><NOTE SI="CanTrcv_17_W9255_SetWakeupMode is reentrant but for different transceivers." NOTE-TYPE="HINT" /></INTRODUCTION>
+            <SERVICE-ID>5</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                       <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>TrcvWakeupMode</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Can_GeneralTypes/ImplementationDataTypes/CanTrcv_TrcvWakeupModeType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_CheckWakeup</SHORT-NAME>
+            <INTRODUCTION><NOTE SI="CanTrcv_17_W9255_CheckWakeup is reentrant but for different transceivers." NOTE-TYPE="HINT" /></INTRODUCTION>
+            <SERVICE-ID>7</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_CheckWakeFlag</SHORT-NAME>
+            <SERVICE-ID>14</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_ClearTrcvTimeoutFlag</SHORT-NAME>
+            <SERVICE-ID>12</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_ClearTrcvWufFlag</SHORT-NAME>
+            <INTRODUCTION><NOTE SI="CanTrcv_17_W9255_ClearTrcvWufFlag is reentrant but for different transceivers." NOTE-TYPE="HINT" />    </INTRODUCTION>
+            <SERVICE-ID>10</SERVICE-ID>
+            <IS-REENTRANT>true</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_GetTrcvSystemData</SHORT-NAME>
+            <SERVICE-ID>9</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>TrcvSysData</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                        <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_ReadTrcvSilenceFlag</SHORT-NAME>
+            <SERVICE-ID>13</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>FlagState</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                        <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_CanTrcv_17_W9255/ImplementationDataTypes/CanTrcv_17_W9255_TrcvFlagStateType</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_ReadTrcvTimeoutFlag</SHORT-NAME>
+            <SERVICE-ID>11</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>Transceiver</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>FlagState</SHORT-NAME>
+                <CATEGORY>DATA_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-POINTER-TARGET-PROPS>
+                      <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_CanTrcv_17_W9255/ImplementationDataTypes/CanTrcv_17_W9255_TrcvFlagStateType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                      </SW-POINTER-TARGET-PROPS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_SetPNActivationState</SHORT-NAME>
+            <SERVICE-ID>15</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            <RETURN-TYPE>
+              <SHORT-NAME>Return</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </RETURN-TYPE>
+            <ARGUMENTS>
+              <SW-SERVICE-ARG>
+                <SHORT-NAME>ActivationState</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_CanTrcv_17_W9255/ImplementationDataTypes/CanTrcv_17_W9255_PNActivationType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </SW-SERVICE-ARG>
+            </ARGUMENTS>
+          </BSW-MODULE-ENTRY>
+          <BSW-MODULE-ENTRY>
+            <SHORT-NAME>CanTrcv_17_W9255_MainFunction</SHORT-NAME>
+            <SERVICE-ID>6</SERVICE-ID>
+            <IS-REENTRANT>false</IS-REENTRANT>
+            <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+            <CALL-TYPE>REGULAR</CALL-TYPE>
+            <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+            <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+          </BSW-MODULE-ENTRY>
+        </ELEMENTS>
+      </AR-PACKAGE>
+      <AR-PACKAGE>
+        <SHORT-NAME>Implementations</SHORT-NAME>
+        <ELEMENTS>
+          <BSW-IMPLEMENTATION>
+            <SHORT-NAME>Cantrcv</SHORT-NAME>
+            <CODE-DESCRIPTORS>
+              <CODE>
+                <SHORT-NAME>Files</SHORT-NAME>
+                <ARTIFACT-DESCRIPTORS>
+                  <AUTOSAR-ENGINEERING-OBJECT>
+                    <SHORT-LABEL>ssc::src::CanTrcv_17_W9255.c</SHORT-LABEL>
+                    <CATEGORY>SWSRC</CATEGORY>
+                  </AUTOSAR-ENGINEERING-OBJECT>
+                  <AUTOSAR-ENGINEERING-OBJECT>
+                    <SHORT-LABEL>ssc::inc::CanTrcv_17_W9255.h</SHORT-LABEL>
+                    <CATEGORY>SWHDR</CATEGORY>
+                  </AUTOSAR-ENGINEERING-OBJECT>
+                </ARTIFACT-DESCRIPTORS>
+              </CODE>
+            </CODE-DESCRIPTORS>
+            <GENERATED-ARTIFACTS>
+              <DEPENDENCY-ON-ARTIFACT>
+                <SHORT-NAME>CanTrcv_Cfg_c</SHORT-NAME>
+                <ARTIFACT-DESCRIPTOR>
+                  <SHORT-LABEL>generate::src::CanTrcv_17_W9255_Cfg.c</SHORT-LABEL>
+                  <CATEGORY>SWTEMPLATE</CATEGORY>
+                </ARTIFACT-DESCRIPTOR>
+                <USAGES>
+                  <USAGE>COMPILE</USAGE>
+                </USAGES>
+              </DEPENDENCY-ON-ARTIFACT>
+              <DEPENDENCY-ON-ARTIFACT>
+                <SHORT-NAME>CanTrcv_Cfg_h</SHORT-NAME>
+                <ARTIFACT-DESCRIPTOR>
+                  <SHORT-LABEL>generate::inc::CanTrcv_17_W9255_Cfg.h</SHORT-LABEL>
+                  <CATEGORY>SWTEMPLATE</CATEGORY>
+                </ARTIFACT-DESCRIPTOR>
+                <USAGES>
+                  <USAGE>COMPILE</USAGE>
+                </USAGES>
+              </DEPENDENCY-ON-ARTIFACT>
+              <DEPENDENCY-ON-ARTIFACT>
+                <SHORT-NAME>CanTrcv_xdm</SHORT-NAME>
+                <ARTIFACT-DESCRIPTOR>
+                  <SHORT-LABEL>config::CanTrcv_17_W9255.xdm</SHORT-LABEL>
+                  <CATEGORY>SWTOOL</CATEGORY>
+                </ARTIFACT-DESCRIPTOR>
+                <USAGES>
+                  <USAGE>CODEGENERATION</USAGE>
+                </USAGES>
+              </DEPENDENCY-ON-ARTIFACT>
+              <DEPENDENCY-ON-ARTIFACT>
+                <SHORT-NAME>CanTrcv_bmd</SHORT-NAME>
+                <ARTIFACT-DESCRIPTOR>
+                  <SHORT-LABEL> autosar::TC38x::TC389x::CanTrcv_17_W9255.bmd</SHORT-LABEL>
+                  <CATEGORY>SWTOOL</CATEGORY>
+                </ARTIFACT-DESCRIPTOR>
+                <USAGES>
+                  <USAGE>CODEGENERATION</USAGE>
+                </USAGES>
+              </DEPENDENCY-ON-ARTIFACT>
+            </GENERATED-ARTIFACTS>
+            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+            <RESOURCE-CONSUMPTION>
+              <SHORT-NAME>ResourceConsumption</SHORT-NAME>
+              <MEMORY-SECTIONS>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_VAR_CLEARED_QM_LOCAL_16</SHORT-NAME>
+                  <ALIGNMENT>16</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_VAR_CLEARED_QM_LOCAL_8</SHORT-NAME>
+                  <ALIGNMENT>8</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_CODE_QM_LOCAL</SHORT-NAME>
+                  <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_VAR_CLEARED_QM_LOCAL_32</SHORT-NAME>
+                  <ALIGNMENT>32</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_CONFIG_DATA_QM_LOCAL_8</SHORT-NAME>
+                  <ALIGNMENT>8</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/CONFIG</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_CONFIG_DATA_QM_LOCAL_UNSPECIFIED</SHORT-NAME>
+                  <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/CONFIG</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+                <MEMORY-SECTION>
+                  <SHORT-NAME>SEC_CONFIG_DATA_QM_LOCAL_16</SHORT-NAME>
+                  <ALIGNMENT>16</ALIGNMENT>
+                  <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/CONFIG</SW-ADDRMETHOD-REF>
+                </MEMORY-SECTION>
+              </MEMORY-SECTIONS>
+              <SECTION-NAME-PREFIXS>
+                <SECTION-NAME-PREFIX>
+                  <SHORT-NAME>CANTRCV_17_W9255</SHORT-NAME>
+                  <SYMBOL>CANTRCV_17_W9255</SYMBOL>
+                </SECTION-NAME-PREFIX>
+              </SECTION-NAME-PREFIXS>
+            </RESOURCE-CONSUMPTION>
+            <SW-VERSION>20.25.0</SW-VERSION>
+            <VENDOR-ID>17</VENDOR-ID>
+                                          <AR-RELEASE-VERSION>4.2.2</AR-RELEASE-VERSION>
+              
+            <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR_CanTrcv_17_W9255/BswModuleDescriptions/CanTrcv/CanTrcvBehavior</BEHAVIOR-REF>
+            <VENDOR-SPECIFIC-MODULE-DEF-REFS>
+              <VENDOR-SPECIFIC-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AURIX2G_W9255/EcucDefs/CanTrcv</VENDOR-SPECIFIC-MODULE-DEF-REF>
+            </VENDOR-SPECIFIC-MODULE-DEF-REFS>
+          </BSW-IMPLEMENTATION>
+        </ELEMENTS>
+      </AR-PACKAGE>
+    <AR-PACKAGE>
+    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+    <CATEGORY>STANDARD</CATEGORY>
+    <ELEMENTS>
+        <IMPLEMENTATION-DATA-TYPE>
+            <SHORT-NAME>CanTrcv_17_W9255_ConfigType</SHORT-NAME>
+            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+            <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/BaseTypes/void</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+            </SW-DATA-DEF-PROPS>
+            <TYPE-EMITTER>BSW</TYPE-EMITTER>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE>
+            <SHORT-NAME>CanTrcv_17_W9255_PNActivationType</SHORT-NAME>
+            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+            <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_CanTrcv_17_W9255/CompuMethods/CanTrcv_17_W9255_PNActivationType</COMPU-METHOD-REF>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                        <ADDITIONAL-NATIVE-TYPE-QUALIFIER>enum</ADDITIONAL-NATIVE-TYPE-QUALIFIER>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+            </SW-DATA-DEF-PROPS>
+            <TYPE-EMITTER>BSW</TYPE-EMITTER>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE>
+            <SHORT-NAME>CanTrcv_17_W9255_TrcvFlagStateType</SHORT-NAME>
+            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+            <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_CanTrcv_17_W9255/CompuMethods/CanTrcv_17_W9255_TrcvFlagStateType</COMPU-METHOD-REF>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                        <ADDITIONAL-NATIVE-TYPE-QUALIFIER>enum</ADDITIONAL-NATIVE-TYPE-QUALIFIER>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+            </SW-DATA-DEF-PROPS>
+            <TYPE-EMITTER>BSW</TYPE-EMITTER>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE>
+            <SHORT-NAME>CanTrcv_17_W9255_ChannelConfigType</SHORT-NAME>
+            <CATEGORY>STRUCTURE</CATEGORY>
+            <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvInitState</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvWakeupSourceRef</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_EcuM/ImplementationDataTypes/EcuM_WakeupSourceType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvPorWakeupSourceRef</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_EcuM/ImplementationDataTypes/EcuM_WakeupSourceType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvSyserrWakeupSourceRef</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_EcuM/ImplementationDataTypes/EcuM_WakeupSourceType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvChannelId</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvSpiSequence</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_SequenceType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvSpiChannel</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_ChannelType</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvWakeupByBusEnable</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+            </SUB-ELEMENTS>
+            <TYPE-EMITTER>BSW</TYPE-EMITTER>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE>
+            <SHORT-NAME>CanTrcv_17_W9255_PNConfigType</SHORT-NAME>
+            <CATEGORY>STRUCTURE</CATEGORY>
+            <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvPnIdInfoPtr</SHORT-NAME>
+                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-POINTER-TARGET-PROPS>
+                                    <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </SW-POINTER-TARGET-PROPS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvPnDataInfoPtr</SHORT-NAME>
+                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-POINTER-TARGET-PROPS>
+                                    <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </SW-POINTER-TARGET-PROPS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <SHORT-NAME>CanTrcvPnDlc</SHORT-NAME>
+                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+            </SUB-ELEMENTS>
+            <TYPE-EMITTER>BSW</TYPE-EMITTER>
+        </IMPLEMENTATION-DATA-TYPE>
+    </ELEMENTS>
+  </AR-PACKAGE>
+  <AR-PACKAGE>
+    <SHORT-NAME>CompuMethods</SHORT-NAME>
+    <CATEGORY>STANDARD</CATEGORY>
+    <ELEMENTS>
+        <COMPU-METHOD>
+            <SHORT-NAME>CanTrcv_17_W9255_PNActivationType</SHORT-NAME>
+            <CATEGORY>TEXTTABLE</CATEGORY>
+            <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                    <COMPU-SCALE>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                        <COMPU-CONST>
+                            <VT>CANTRCV_17_W9255_PN_DISABLED</VT>
+                        </COMPU-CONST>
+                    </COMPU-SCALE>
+                    <COMPU-SCALE>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <COMPU-CONST>
+                            <VT>CANTRCV_17_W9255_PN_ENABLED</VT>
+                        </COMPU-CONST>
+                    </COMPU-SCALE>
+                </COMPU-SCALES>
+            </COMPU-INTERNAL-TO-PHYS>
+        </COMPU-METHOD>
+        <COMPU-METHOD>
+            <SHORT-NAME>CanTrcv_17_W9255_TrcvFlagStateType</SHORT-NAME>
+            <CATEGORY>TEXTTABLE</CATEGORY>
+            <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                    <COMPU-SCALE>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                        <COMPU-CONST>
+                            <VT>CANTRCV_17_W9255_FLAG_CLEARED</VT>
+                        </COMPU-CONST>
+                    </COMPU-SCALE>
+                    <COMPU-SCALE>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <COMPU-CONST>
+                            <VT>CANTRCV_17_W9255_FLAG_SET</VT>
+                        </COMPU-CONST>
+                    </COMPU-SCALE>
+                </COMPU-SCALES>
+            </COMPU-INTERNAL-TO-PHYS>
+        </COMPU-METHOD>
+    </ELEMENTS>
+  </AR-PACKAGE>
+</AR-PACKAGES>
+</AR-PACKAGE>
+</AR-PACKAGES>
+</AUTOSAR>
