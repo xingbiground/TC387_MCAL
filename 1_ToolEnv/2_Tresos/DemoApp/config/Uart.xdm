@@ -1,0 +1,204 @@
+<?xml version='1.0'?>
+<datamodel version="7.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Uart" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Uart" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/AURIX2G/EcucDefs/Uart"/>
+              <a:a name="IMPORTER_INFO" value="Impr367"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+              </d:var>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:var name="ArMajorVersion" type="INTEGER" value="4"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="2"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="20"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="20"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="255">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="17">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="_TRICORE_TC389">
+                  <a:a name="IMPORTER_INFO">
+                    <a:v>@CALC</a:v>
+                    <a:v>@DEF</a:v>
+                  </a:a>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="UartConfigSet" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:lst name="UartChannel" type="MAP">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                  <d:ctr name="UartChannel_0" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:var name="UartAutoCalcBaudParams" type="BOOLEAN" 
+                           value="true">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartBaudRate" type="INTEGER" value="115200">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartCTSEnable" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartCTSPinSelection" type="ENUMERATION" 
+                           value="SELECT_CTS_B_PORT33_PIN5"/>
+                    <d:var name="UartCTSPolarity" type="ENUMERATION" 
+                           value="HIGH">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartChanBaudDenominator" type="INTEGER" 
+                           value="2500">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartChanBaudNumerator" type="INTEGER" 
+                           value="2304">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartChanBaudOverSampling" type="INTEGER" 
+                           value="15">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartChanBaudPrescalar" type="INTEGER" value="9">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartChannelId" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartDataLength" type="INTEGER" value="8">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartHwUnit" type="ENUMERATION" value="ASCLIN2">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartParityBit" type="ENUMERATION" 
+                           value="NOPARITY">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartRxChannelMode" type="ENUMERATION" 
+                           value="INTERRUPT">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartRxPinSelection" type="ENUMERATION" 
+                           value="SELECT_A_PORT14_PIN3">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartStopBits" type="INTEGER" value="1">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:var name="UartTxChannelMode" type="ENUMERATION" 
+                           value="INTERRUPT">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    </d:var>
+                    <d:ctr name="UartNotification" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      <d:var name="UartAbortReceiveNotifPtr" 
+                             type="FUNCTION-NAME" value="NULL_PTR">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="UartAbortTransmitNotifPtr" 
+                             type="FUNCTION-NAME" value="NULL_PTR">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="UartReceiveNotifPtr" type="FUNCTION-NAME" 
+                             value="NULL_PTR">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="UartTransmitNotifPtr" type="FUNCTION-NAME" 
+                             value="NULL_PTR">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="UartStreamingRecvNotifPtr" type="FUNCTION-NAME" 
+                             value="Streaming_Notification00">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+              <d:ctr name="UartGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:var name="UartStreamingRecvModeApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="UartAbortReadApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartAbortWriteApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartCsrClksel" type="ENUMERATION" value="ASCLINS">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartDeInitApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartIndex" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartInitCheckApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartInitDeInitApiMode" type="ENUMERATION" 
+                       value="MCAL_SUPERVISOR">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartMainFunctionReadPeriod" type="FLOAT" 
+                       value="0.005">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartMainFunctionWritePeriod" type="FLOAT" 
+                       value="0.005">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartRunTimeErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartSafetyEnable" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartSleepEnable" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartTimeoutCount" type="INTEGER" value="4294967295">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:var name="UartVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:var>
+                <d:ref name="UartClockRef" type="REFERENCE" 
+                       value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePointConfig">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                </d:ref>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

@@ -1,0 +1,54 @@
+!SESSION 2016-08-30 15:17:10.490 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean
+
+!ENTRY org.eclipse.osgi 4 0 2016-08-30 15:17:11.020
+!MESSAGE The -clean (osgi.clean) option was not successful. Unable to clean the storage area: C:\sofit\aurix2g_sw_mcal\tresos\tresos\configuration\org.eclipse.osgi
+!SESSION 2016-09-16 11:48:48.508 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean
+
+!ENTRY org.eclipse.osgi 4 0 2016-09-16 11:48:49.238
+!MESSAGE The -clean (osgi.clean) option was not successful. Unable to clean the storage area: C:\sofit\aurix2g_sw_mcal\tresos\tresos\configuration\org.eclipse.osgi
+!SESSION 2018-02-16 13:17:20.419 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -data C:\Users\Shringar\Desktop\temp\DemoApp\DemoWorkspace\McalDemo\TC38A\1_ToolEnv\2_Tresos -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 1 1 2018-02-16 13:17:23.866
+!MESSAGE Workbench migration started
+
+!ENTRY org.eclipse.ui 1 1 2018-02-16 13:17:24.596
+!MESSAGE Workbench migration finished
+!SESSION 2018-07-04 11:30:45.129 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 1 1 2018-07-04 11:31:28.020
+!MESSAGE Workbench migration started
+
+!ENTRY org.eclipse.ui 1 1 2018-07-04 11:31:30.356
+!MESSAGE Workbench migration finished
+!SESSION 2018-09-22 18:45:30.268 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 1 1 2018-09-22 18:45:33.772
+!MESSAGE Workbench migration started
+
+!ENTRY org.eclipse.ui 1 1 2018-09-22 18:45:34.386
+!MESSAGE Workbench migration finished

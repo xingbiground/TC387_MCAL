@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<datamodel version="7.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="EcuC" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="EcuC" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/AURIX2G/EcucDefs/EcuC"/>
+              <a:a name="IMPORTER_INFO" value="Impr367"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+              </d:var>
+              <d:lst name="EcucConfigSet" type="MAP">
+                <a:a name="IMPORTER_INFO" value="Impr367"/>
+                <d:ctr name="EcucConfigSet_0" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="Impr367"/>
+                  <d:lst name="EcucPduCollection" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="Impr367"/>
+                    <d:ctr name="EcucPduCollection_0" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      <d:var name="PduIdTypeEnum" type="ENUMERATION" 
+                             value="UINT8">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:var name="PduLengthTypeEnum" type="ENUMERATION" 
+                             value="UINT8">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                      </d:var>
+                      <d:lst name="Pdu" type="MAP">
+                        <a:a name="IMPORTER_INFO" value="Impr367"/>
+                        <d:ctr name="Pdu_0" type="IDENTIFIABLE">
+                          <a:a name="IMPORTER_INFO" value="Impr367"/>
+                          <d:lst name="J1939Requestable"/>
+                          <d:lst name="MetaDataLength"/>
+                          <d:var name="PduLength" type="INTEGER" value="0">
+                            <a:a name="IMPORTER_INFO" value="Impr367"/>
+                          </d:var>
+                          <d:lst name="SysTPduToFrameTriggeringRef"/>
+                          <d:lst name="SysTPduToPduTriggeringRef"/>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+              <d:lst name="EcucHardware" type="MAP"/>
+              <d:lst name="EcucPartitionCollection" type="MAP"/>
+              <d:lst name="EcucSelectedLoadableVariant" type="MAP"/>
+              <d:lst name="EcucPostBuildVariants" type="MAP"/>
+              <d:lst name="EcucUnitGroupAssignment" type="MAP"/>
+              <d:lst name="EcucVariationResolver" type="MAP"/>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

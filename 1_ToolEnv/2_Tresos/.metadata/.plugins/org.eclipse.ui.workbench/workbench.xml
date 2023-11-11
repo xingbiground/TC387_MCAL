@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="14" version="2.0">
+<workbenchAdvisor/>
+<window height="728" width="1036" x="0" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="dreisoft.tresos.guidedconfig.api.actionSet.Wizards" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="dreisoft.tresos.launcher2.api.actionSet.Build" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="ToolBar.Undo" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="175" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="dreisoft.tresos.datamodel2.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Studio">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</editorArea>
+</editors>
+<views>
+<view id="dreisoft.tresos.workflow.api.views.Workflow" partName="Workflows">
+<viewState/>
+</view>
+<view id="dreisoft.tresos.guidedconfig.api.views.Sidebar" partName="Sidebar"/>
+<view id="dreisoft.tresos.launcher2.api.views.Problems" partName="Problems View">
+<viewState COL_DESCRIPTION="1691" COL_ID="100" COL_LOCATION="0" COL_PATH="200" COL_RESOURCE="0" categories="Warning,Error," max_childs="1000" order_direction="-1" order_type="0"/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="dreisoft.tresos.launcher2.api.views.ErrorLog" partName="Error Log">
+<viewState COL_ENTRY_TYPE="100" COL_ERROR_CODE="100" COL_MESSAGE="1525" COL_ORIGIN="200" COL_TIMESTAMP="100">
+<ErrorLogDetails height="500" pos_x="433" pos_y="114" width="500"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="dreisoft.tresos.perspective.studio">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="dreisoft.tresos.application.launcher2.platform.TresosPerspectiveFactory" id="dreisoft.tresos.perspective.studio" label="Studio"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.About"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.Support"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.Search"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.Build"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.Commandline"/>
+<alwaysOnActionSet id="dreisoft.tresos.launcher2.api.actionSet.Licenses"/>
+<alwaysOnActionSet id="dreisoft.tresos.guidedconfig.api.actionSet.Wizards"/>
+<show_view_action id="dreisoft.tresos.launcher2.api.views.ErrorLog"/>
+<show_view_action id="dreisoft.tresos.launcher2.api.views.Problems"/>
+<show_view_action id="dreisoft.tresos.datamodel2.ui.swt.DescriptionPage"/>
+<show_view_action id="dreisoft.tresos.datamodel2.ui.swt.MetaOutlinePage"/>
+<show_view_action id="dreisoft.tresos.datamodel2.ui.swt.ErrorPage"/>
+<show_view_action id="dreisoft.tresos.guidedconfig.api.views.Results"/>
+<show_view_action id="dreisoft.tresos.workflow.api.views.Workflow"/>
+<show_view_action id="dreisoft.tresos.guidedconfig.api.views.Sidebar"/>
+<new_wizard_action id="newConfigurationProject"/>
+<new_wizard_action id="newImportConfigurationProject"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="dreisoft.tresos.launcher2.api.views.ErrorLog"/>
+<view id="dreisoft.tresos.launcher2.api.views.Problems"/>
+<view id="dreisoft.tresos.workflow.api.views.Workflow"/>
+<view id="dreisoft.tresos.guidedconfig.api.views.Sidebar"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7c211fd0">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6a84bc2a" ratio="0.7496274" ratioLeft="1006" ratioRight="336" relationship="2" relative="org.eclipse.ui.internal.ViewStack@7c211fd0">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.29435083" ratioLeft="297" ratioRight="712" relationship="2" relative="org.eclipse.ui.internal.ViewStack@7c211fd0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d84cb86" ratio="0.61092716" ratioLeft="369" ratioRight="235" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="dreisoft.tresos.launcher2.api.views.Problems" appearance="2" expanded="2">
+<page content="dreisoft.tresos.launcher2.api.views.ErrorLog" label="Error Log"/>
+<page content="dreisoft.tresos.launcher2.api.views.Problems" label="Problems View"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="dreisoft.tresos.guidedconfig.api.views.Results" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@71a3a190" ratio="0.54934824" ratioLeft="590" ratioRight="484" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2d84cb86">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="dreisoft.tresos.launcher2.gui.views.description.DescriptionPage" label="LabelNotFound"/>
+<page content="dreisoft.tresos.launcher2.gui.views.info.MetaOutlinePage" label="LabelNotFound"/>
+<page content="dreisoft.tresos.launcher2.gui.views.errors.ErrorPage" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@588ffeb" ratio="0.84704185" ratioLeft="587" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="dreisoft.tresos.workflow.api.views.Workflow" appearance="2" expanded="2">
+<page content="dreisoft.tresos.workflow.api.views.Workflow" label="Workflows"/>
+<page content="dreisoft.tresos.guidedconfig.api.views.Sidebar" label="Sidebar"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7004e3d" ratio="0.76324505" ratioLeft="461" ratioRight="143" relationship="4" relative="org.eclipse.ui.internal.ViewStack@7c211fd0">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory/>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList/>
+</workbench>
