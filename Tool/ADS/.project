@@ -38,9 +38,24 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>0_Src</name>
+			<name>AppSw</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/0_Src</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/AppSw</locationURI>
+		</link>
+		<link>
+			<name>BaseSw</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/BaseSw</locationURI>
+		</link>
+		<link>
+			<name>MCAL_Project</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/MCAL_Project</locationURI>
+		</link>
+		<link>
+			<name>McIsar</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/McIsar</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
