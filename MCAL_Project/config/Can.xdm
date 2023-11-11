@@ -1142,7 +1142,7 @@
                   </a:a>
                 </d:var>
                 <d:var name="SwMajorVersion" type="INTEGER" value="20"/>
-                <d:var name="SwMinorVersion" type="INTEGER" value="10"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="25"/>
                 <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
                 <d:var name="VendorApiInfix" type="STRING" value="McmCan">
                   <a:a name="IMPORTER_INFO" value="IMP"/>

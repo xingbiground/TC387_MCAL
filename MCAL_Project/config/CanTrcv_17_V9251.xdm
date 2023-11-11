@@ -53,9 +53,10 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
                     <d:var name="CanTrcvMaxBaudrate" type="INTEGER" value="1000"/>
-                    <d:lst name="CanTrcvWakeupByBusUsed">
-                      <d:var type="BOOLEAN" value="false"/>
-                    </d:lst>
+                    <d:var name="CanTrcvWakeupByBusUsed" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
                     <d:lst name="CanTrcvIcuChannelRef"/>
                     <d:lst name="CanTrcvWakeupSourceRef"/>
                     <d:lst name="CanTrcvPorWakeupSourceRef"/>
@@ -109,9 +110,10 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
                     <d:var name="CanTrcvMaxBaudrate" type="INTEGER" value="1000"/>
-                    <d:lst name="CanTrcvWakeupByBusUsed">
-                      <d:var type="BOOLEAN" value="false"/>
-                    </d:lst>
+                    <d:var name="CanTrcvWakeupByBusUsed" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
                     <d:lst name="CanTrcvIcuChannelRef"/>
                     <d:lst name="CanTrcvWakeupSourceRef"/>
                     <d:lst name="CanTrcvPorWakeupSourceRef"/>
@@ -165,9 +167,10 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
                     <d:var name="CanTrcvMaxBaudrate" type="INTEGER" value="1000"/>
-                    <d:lst name="CanTrcvWakeupByBusUsed">
-                      <d:var type="BOOLEAN" value="false"/>
-                    </d:lst>
+                    <d:var name="CanTrcvWakeupByBusUsed" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
                     <d:lst name="CanTrcvIcuChannelRef"/>
                     <d:lst name="CanTrcvWakeupSourceRef"/>
                     <d:lst name="CanTrcvPorWakeupSourceRef"/>
@@ -218,11 +221,10 @@
                     <d:var name="CanTrcvMaxBaudrate" type="INTEGER" value="5000">
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
-                    <d:lst name="CanTrcvWakeupByBusUsed">
-                      <d:var type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
-                    </d:lst>
+                    <d:var name="CanTrcvWakeupByBusUsed" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
                     <d:lst name="CanTrcvIcuChannelRef"/>
                     <d:lst name="CanTrcvWakeupSourceRef"/>
                     <d:lst name="CanTrcvPorWakeupSourceRef"/>
@@ -287,7 +289,7 @@
                 <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
                 <d:var name="ArPatchVersion" type="INTEGER" value="2"/>
                 <d:var name="SwMajorVersion" type="INTEGER" value="20"/>
-                <d:var name="SwMinorVersion" type="INTEGER" value="10"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="20"/>
                 <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
                 <d:var name="ModuleId" type="INTEGER" value="70">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>

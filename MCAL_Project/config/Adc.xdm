@@ -691,7 +691,7 @@
                 <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
                 <d:var name="ArPatchVersion" type="INTEGER" value="2"/>
                 <d:var name="SwMajorVersion" type="INTEGER" value="20"/>
-                <d:var name="SwMinorVersion" type="INTEGER" value="10"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="25"/>
                 <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
                 <d:var name="ModuleId" type="INTEGER" value="123">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
