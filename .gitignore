@@ -3,3 +3,4 @@ TriCore_Debug_Tasking/
 .vscode/
 .settings/
 *_Bswmd.arxml
+*.launch
